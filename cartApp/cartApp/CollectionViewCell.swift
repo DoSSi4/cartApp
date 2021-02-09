@@ -13,7 +13,7 @@ class CollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var colldesc: UILabel!
     @IBOutlet weak var cartbttn: UIButton!
     @IBOutlet weak var price: UILabel!
-    static let identifier = String(describing: CollectionViewCell.self)
+    static let identifier = "CollectionViewCell"
     static let nib = UINib(nibName: identifier, bundle: nil)
     override func awakeFromNib() {
         super.awakeFromNib()

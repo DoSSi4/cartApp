@@ -8,39 +8,28 @@
 import UIKit
 
 class ViewController: UIViewController {
-    let listVC = ListViewController()
-    let greedVC = GreedViewController()
-
-    @IBOutlet weak var segment: UISegmentedControl!
+    @IBOutlet weak var listView: UIView!
+    @IBOutlet weak var greedView: UIView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        setupViews()
-
-    }
-    private func setupViews(){
-        addChild(listVC)
-        addChild(greedVC)
-        self.view.addSubview(listVC.view)
-        self.view.addSubview(greedVC.view)
-        
-        listVC.didMove(toParent: self)
-        greedVC.didMove(toParent: self)
-        listVC.view.frame = self.view.bounds
-        greedVC.view.frame = self.view.bounds
-        greedVC.view.isHidden = true
-        
     }
     
     @IBAction func didSegment(_ sender: UISegmentedControl) {
-        if  sender.selectedSegmentIndex == 0 {
-            listVC.view.isHidden = false
+        if sender.selectedSegmentIndex == 0{
+            
+                self.listView.alpha = 0
+                self.greedView.alpha = 1
+                
+        }else{
+            UIView.animate(withDuration: 0.5, animations: {
+                self.listView.alpha = 1
+                self.greedView.alpha = 0
+            })
+            }
         }
-        else{
-            greedVC.view.isHidden = false
-            listVC.view.isHidden = true
-        }
-    }
     
 }
+
 
 
