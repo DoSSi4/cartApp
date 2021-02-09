@@ -15,7 +15,7 @@ class GreedViewController: UIViewController {
         collView.delegate = self
         collView.dataSource = self
         collView.register(CollectionViewCell.nib, forCellWithReuseIdentifier: CollectionViewCell.identifier)
-        
+    
     }
 }
 extension GreedViewController: UICollectionViewDataSource{
@@ -31,6 +31,11 @@ extension GreedViewController: UICollectionViewDataSource{
 extension GreedViewController: UICollectionViewDelegateFlowLayout{
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(width: 200, height: 120)
+    }
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        collectionView.deselectItem(at: indexPath, animated: true)
+        let details = storyboard?.instantiateViewController(identifier: "DetailsViewController") as! DetailsViewController
+        self.present(details, animated: true)
     }
     }
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {

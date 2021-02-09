@@ -29,5 +29,10 @@ extension ListViewController: UITableViewDelegate, UITableViewDataSource{
         let cell = tableView.dequeueReusableCell(withIdentifier: TableViewCell.identifier, for: indexPath) as! TableViewCell
         return cell
     }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+        let details = storyboard?.instantiateViewController(identifier: "DetailsViewController") as! DetailsViewController
+        self.present(details, animated: true)
+    }
 }
 

@@ -19,6 +19,7 @@
 		3F38F70425D03127008F419F /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F38F70225D03127008F419F /* TableViewCell.xib */; };
 		3F38F70825D04927008F419F /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F38F70625D04927008F419F /* CollectionViewCell.swift */; };
 		3F38F70925D04927008F419F /* CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F38F70725D04927008F419F /* CollectionViewCell.xib */; };
+		3F6812B325D2F47000F4D46D /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6812B225D2F47000F4D46D /* DetailsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		3F38F70225D03127008F419F /* TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
 		3F38F70625D04927008F419F /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		3F38F70725D04927008F419F /* CollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionViewCell.xib; sourceTree = "<group>"; };
+		3F6812B225D2F47000F4D46D /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +83,7 @@
 				3F38F70225D03127008F419F /* TableViewCell.xib */,
 				3F38F70625D04927008F419F /* CollectionViewCell.swift */,
 				3F38F70725D04927008F419F /* CollectionViewCell.xib */,
+				3F6812B225D2F47000F4D46D /* DetailsViewController.swift */,
 			);
 			path = cartApp;
 			sourceTree = "<group>";
@@ -160,6 +163,7 @@
 				3F38F6E725D01F20008F419F /* ViewController.swift in Sources */,
 				3F38F6E325D01F20008F419F /* AppDelegate.swift in Sources */,
 				3F38F6F925D02A22008F419F /* ListViewController.swift in Sources */,
+				3F6812B325D2F47000F4D46D /* DetailsViewController.swift in Sources */,
 				3F38F70825D04927008F419F /* CollectionViewCell.swift in Sources */,
 				3F38F70325D03127008F419F /* TableViewCell.swift in Sources */,
 				3F38F6E525D01F20008F419F /* SceneDelegate.swift in Sources */,

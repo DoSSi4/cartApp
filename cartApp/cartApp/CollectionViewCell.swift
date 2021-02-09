@@ -15,9 +15,11 @@ class CollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var price: UILabel!
     static let identifier = "CollectionViewCell"
     static let nib = UINib(nibName: identifier, bundle: nil)
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
     }
+
 
 }
